@@ -336,4 +336,4 @@ gradle-app.setting
 
 # Docker compose
 docker-compose/*.java
-docker-compose/**/
+docker-compose/localstack/
