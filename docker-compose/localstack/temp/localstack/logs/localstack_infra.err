@@ -1,0 +1,618 @@
+SERVICES variable is ignored if EAGER_SERVICE_LOADING=0.
+2023-02-03T22:27:16.540 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='_patch_botocore_json_parser', value='localstack.aws.client:_patch_botocore_json_parser', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.543 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='_run_init_scripts_on_start', value='localstack.runtime.init:_run_init_scripts_on_start', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.544 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='deprecation_warnings', value='localstack.plugins:deprecation_warnings', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.545 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_partition_adjusting_proxy_listener', value='localstack.plugins:register_partition_adjusting_proxy_listener', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.545 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_aws_request_logger', value='localstack_ext.analytics.plugins:add_aws_request_logger', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.546 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_custom_edge_routes', value='localstack_ext.plugins:add_custom_edge_routes', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.550 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_iam_enforcement_listener', value='localstack_ext.services.iam.plugins:add_iam_enforcement_listener', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.552 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_legacy_iam_enforcement_listener', value='localstack_ext.services.iam.plugins:add_legacy_iam_enforcement_listener', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.552 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='deprecation_warnings_pro', value='localstack_ext.plugins:deprecation_warnings_pro', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.552 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='extensions_on_infra_start', value='localstack_ext.extensions.plugins:extensions_on_infra_start', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.553 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='init_stackinfo_handler', value='localstack_ext.services.internal.stackinfo.plugins:init_stackinfo_handler', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.555 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_public_pods_api', value='localstack_ext.persistence.plugins:register_public_pods_api', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.556 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_restricted_pods_api', value='localstack_ext.persistence.plugins:register_restricted_pods_api', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.556 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_state_serializer_handlers', value='localstack_ext.persistence.plugins:register_state_serializer_handlers', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.556 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='setup_pro_infra', value='localstack_ext.plugins:setup_pro_infra', group='localstack.hooks.on_infra_start')
+2023-02-03T22:27:16.556 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._patch_botocore_json_parser = <function _patch_botocore_json_parser at 0x7fe3d1c9c4c0>)
+2023-02-03T22:27:16.556 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:_patch_botocore_json_parser
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start._run_init_scripts_on_start = <function _run_init_scripts_on_start at 0x7fe3d1c9d2d0>)
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:_run_init_scripts_on_start
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.deprecation_warnings = <function deprecation_warnings at 0x7fe3d1c9dab0>)
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:deprecation_warnings
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_partition_adjusting_proxy_listener = <function register_partition_adjusting_proxy_listener at 0x7fe3d1c9d990>)
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:register_partition_adjusting_proxy_listener is disabled
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_aws_request_logger = <function add_aws_request_logger at 0x7fe3d1c9dd80>)
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_aws_request_logger is disabled
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_custom_edge_routes = <function add_custom_edge_routes at 0x7fe3d1acd630>)
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_custom_edge_routes is disabled
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_iam_enforcement_listener = <function add_iam_enforcement_listener at 0x7fe3d1ace5f0>)
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_iam_enforcement_listener is disabled
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_legacy_iam_enforcement_listener = <function add_legacy_iam_enforcement_listener at 0x7fe3d1ace440>)
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_legacy_iam_enforcement_listener is disabled
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.deprecation_warnings_pro = <function deprecation_warnings_pro at 0x7fe3d1acdf30>)
+2023-02-03T22:27:16.557 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:deprecation_warnings_pro
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.extensions_on_infra_start = <function extensions_on_infra_start at 0x7fe3d1ace950>)
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:extensions_on_infra_start is disabled
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.init_stackinfo_handler = <function init_stackinfo_handler at 0x7fe3d1acee60>)
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:init_stackinfo_handler is disabled
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_public_pods_api = <function register_public_pods_api at 0x7fe3d1acf2e0>)
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:register_public_pods_api
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_restricted_pods_api = <function register_restricted_pods_api at 0x7fe3d1acf1c0>)
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:register_restricted_pods_api is disabled
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_state_serializer_handlers = <function register_state_serializer_handlers at 0x7fe3d1acf400>)
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:register_state_serializer_handlers is disabled
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.setup_pro_infra = <function setup_pro_infra at 0x7fe3d1acdbd0>)
+2023-02-03T22:27:16.558 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:setup_pro_infra is disabled
+2023-02-03T22:27:16.559 DEBUG --- [  MainThread] localstack.runtime.init    : Init scripts discovered: {BOOT: [], START: [], READY: [], SHUTDOWN: []}
+2023-02-03T22:27:16.560 DEBUG --- [  MainThread] localstack.plugins         : Checking for the usage of deprecated community features and configs...
+2023-02-03T22:27:16.560  WARN --- [  MainThread] localstack.deprecations    : USE_SSL is deprecated (since 0.11.3) and will be removed in upcoming releases of LocalStack! Each endpoint now supports multiplexing HTTP/HTTPS traffic over the same port. Please remove this environment variable.
+2023-02-03T22:27:16.650 DEBUG --- [  MainThread] l.a.p.service_router       : building service catalog index cache file /var/lib/localstack/cache/service-catalog-1_3_2_dev-1_29_45.pickle
+2023-02-03T22:27:18.438 DEBUG --- [  MainThread] localstack.utils.threads   : start_thread called without providing a custom name
+2023-02-03T22:27:18.483  WARN --- [-functhread4] l.services.internal        : Enabling diagnose endpoint, please be aware that this can expose sensitive information via your network.
+2023-02-03T22:27:18.489 DEBUG --- [-functhread4] l.bootstrap.install        : Attempting to download local SSL certificate file
+2023-02-03T22:27:19.227 DEBUG --- [-functhread4] localstack.utils.http      : Starting download from https://github.com/localstack/localstack-artifacts/raw/master/local-certs/server.key to /var/lib/localstack/cache/server.test.pem (5224 bytes)
+2023-02-03T22:27:19.237 DEBUG --- [-functhread4] localstack.utils.http      : Done downloading https://github.com/localstack/localstack-artifacts/raw/master/local-certs/server.key, response code 200, total bytes 7742
+2023-02-03T22:27:19.260  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2023-02-03T22:27:19.260  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2023-02-03T22:27:19.266  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2023-02-03T22:27:19.266  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2023-02-03T22:27:19.343  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "start_runtime_components" took 904.97ms
+2023-02-03T22:27:19.345 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='acm:default', value='localstack.services.providers:acm', group='localstack.aws.provider')
+2023-02-03T22:27:19.353 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='apigateway:default', value='localstack.services.providers:apigateway', group='localstack.aws.provider')
+2023-02-03T22:27:19.353 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudformation:default', value='localstack.services.providers:cloudformation', group='localstack.aws.provider')
+2023-02-03T22:27:19.353 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudwatch:default', value='localstack.services.providers:cloudwatch', group='localstack.aws.provider')
+2023-02-03T22:27:19.354 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='config:default', value='localstack.services.providers:awsconfig', group='localstack.aws.provider')
+2023-02-03T22:27:19.354 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='dynamodb:default', value='localstack.services.providers:dynamodb', group='localstack.aws.provider')
+2023-02-03T22:27:19.354 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='dynamodbstreams:default', value='localstack.services.providers:dynamodbstreams', group='localstack.aws.provider')
+2023-02-03T22:27:19.354 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ec2:default', value='localstack.services.providers:ec2', group='localstack.aws.provider')
+2023-02-03T22:27:19.354 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='es:default', value='localstack.services.providers:es', group='localstack.aws.provider')
+2023-02-03T22:27:19.354 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='events:default', value='localstack.services.providers:events', group='localstack.aws.provider')
+2023-02-03T22:27:19.354 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='firehose:default', value='localstack.services.providers:firehose', group='localstack.aws.provider')
+2023-02-03T22:27:19.354 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iam:default', value='localstack.services.providers:iam', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kinesis:default', value='localstack.services.providers:kinesis', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kms:default', value='localstack.services.providers:kms', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lambda:asf', value='localstack.services.providers:awslambda_asf', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lambda:default', value='localstack.services.providers:awslambda', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='logs:default', value='localstack.services.providers:logs', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='opensearch:default', value='localstack.services.providers:opensearch', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='redshift:default', value='localstack.services.providers:redshift', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='resource-groups:default', value='localstack.services.providers:resource_groups', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='resourcegroupstaggingapi:default', value='localstack.services.providers:resourcegroupstaggingapi', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='route53:default', value='localstack.services.providers:route53', group='localstack.aws.provider')
+2023-02-03T22:27:19.355 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='route53resolver:default', value='localstack.services.providers:route53resolver', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:asf', value='localstack.services.providers:s3_asf', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:default', value='localstack.services.providers:s3', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3control:default', value='localstack.services.providers:s3control', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='secretsmanager:default', value='localstack.services.providers:secretsmanager', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ses:default', value='localstack.services.providers:ses', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sns:default', value='localstack.services.providers:sns', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sqs:default', value='localstack.services.providers:sqs', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ssm:default', value='localstack.services.providers:ssm', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='stepfunctions:default', value='localstack.services.providers:stepfunctions', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sts:default', value='localstack.services.providers:sts', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='support:default', value='localstack.services.providers:support', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='swf:default', value='localstack.services.providers:swf', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='transcribe:default', value='localstack.services.providers:transcribe', group='localstack.aws.provider')
+2023-02-03T22:27:19.356 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='acm:pro', value='localstack_ext.providers:acm', group='localstack.aws.provider')
+2023-02-03T22:27:19.357 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='amplify:pro', value='localstack_ext.providers:amplify', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='apigateway:pro', value='localstack_ext.providers:apigateway', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='apigatewaymanagementapi:pro', value='localstack_ext.providers:apigatewaymanagementapi', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='apigatewayv2:pro', value='localstack_ext.providers:apigatewayv2', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='appconfig:pro', value='localstack_ext.providers:appconfig', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='application-autoscaling:pro', value='localstack_ext.providers:application_autoscaling', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='appsync:pro', value='localstack_ext.providers:appsync', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='athena:pro', value='localstack_ext.providers:athena', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='autoscaling:pro', value='localstack_ext.providers:autoscaling', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='azure:pro', value='localstack_ext.providers:azure', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='backup:pro', value='localstack_ext.providers:backup', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='batch:pro', value='localstack_ext.providers:batch', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ce:pro', value='localstack_ext.providers:ce', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudformation:pro', value='localstack_ext.providers:cloudformation', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudfront:pro', value='localstack_ext.providers:cloudfront', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudtrail:pro', value='localstack_ext.providers:cloudtrail', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cloudwatch:pro', value='localstack_ext.providers:cloudwatch', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='codecommit:pro', value='localstack_ext.providers:codecommit', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cognito-identity:pro', value='localstack_ext.providers:cognito_identity', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='cognito-idp:pro', value='localstack_ext.providers:cognito_idp', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='docdb:pro', value='localstack_ext.providers:docdb', group='localstack.aws.provider')
+2023-02-03T22:27:19.358 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='dynamodb:pro', value='localstack_ext.providers:dynamodb', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='dynamodbstreams:pro', value='localstack_ext.providers:dynamodbstreams', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ec2:pro', value='localstack_ext.providers:ec2', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ecr:pro', value='localstack_ext.providers:ecr', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ecs:pro', value='localstack_ext.providers:ecs', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='efs:pro', value='localstack_ext.providers:efs', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='eks:mock', value='localstack_ext.providers:eks_mock', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='eks:pro', value='localstack_ext.providers:eks', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='elasticache:pro', value='localstack_ext.providers:elasticache', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='elasticbeanstalk:pro', value='localstack_ext.providers:elasticbeanstalk', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='elb:pro', value='localstack_ext.providers:elb', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='elbv2:pro', value='localstack_ext.providers:elbv2', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='emr:pro', value='localstack_ext.providers:emr', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='events:pro', value='localstack_ext.providers:events', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='fis:pro', value='localstack_ext.providers:fis', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='glacier:pro', value='localstack_ext.providers:glacier', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='glue:pro', value='localstack_ext.providers:glue', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iam:pro', value='localstack_ext.providers:iam', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iot-data:pro', value='localstack_ext.providers:iot_data', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iot:pro', value='localstack_ext.providers:iot', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iotanalytics:pro', value='localstack_ext.providers:iotanalytics', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='iotwireless:pro', value='localstack_ext.providers:iotwireless', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kafka:pro', value='localstack_ext.providers:kafka', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kinesis:pro', value='localstack_ext.providers:kinesis', group='localstack.aws.provider')
+2023-02-03T22:27:19.359 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kinesisanalytics:pro', value='localstack_ext.providers:kinesisanalytics', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kinesisanalyticsv2:pro', value='localstack_ext.providers:kinesisanalyticsv2', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='kms:pro', value='localstack_ext.providers:kms', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lakeformation:pro', value='localstack_ext.providers:lakeformation', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='lambda:pro', value='localstack_ext.providers:awslambda', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='logs:pro', value='localstack_ext.providers:logs', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='mediastore-data:pro', value='localstack_ext.providers:mediastore_data', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='mediastore:pro', value='localstack_ext.providers:mediastore', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='mq:pro', value='localstack_ext.providers:mq', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='mwaa:pro', value='localstack_ext.providers:mwaa', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='neptune:pro', value='localstack_ext.providers:neptune', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='opensearch:pro', value='localstack_ext.providers:opensearch', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='organizations:pro', value='localstack_ext.providers:organizations', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='qldb-session:pro', value='localstack_ext.providers:qldb_session', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='qldb:pro', value='localstack_ext.providers:qldb', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='rds-data:pro', value='localstack_ext.providers:rds_data', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='rds:pro', value='localstack_ext.providers:rds', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='redshift-data:pro', value='localstack_ext.providers:redshift_data', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='redshift:pro', value='localstack_ext.providers:redshift', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='route53:pro', value='localstack_ext.providers:route53', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:asf_pro', value='localstack_ext.providers:s3_asf', group='localstack.aws.provider')
+2023-02-03T22:27:19.360 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='s3:pro', value='localstack_ext.providers:s3', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sagemaker-runtime:pro', value='localstack_ext.providers:sagemaker_runtime', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sagemaker:pro', value='localstack_ext.providers:sagemaker', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='secretsmanager:pro', value='localstack_ext.providers:secretsmanager', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='serverlessrepo:pro', value='localstack_ext.providers:serverlessrepo', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='servicediscovery:pro', value='localstack_ext.providers:servicediscovery', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ses:pro', value='localstack_ext.providers:ses', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sesv2:pro', value='localstack_ext.providers:sesv2', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sns:pro', value='localstack_ext.providers:sns', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sqs:pro', value='localstack_ext.providers:sqs', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='ssm:pro', value='localstack_ext.providers:ssm', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='stepfunctions:pro', value='localstack_ext.providers:stepfunctions', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='sts:pro', value='localstack_ext.providers:sts', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='timestream-query:pro', value='localstack_ext.providers:timestream_query', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='timestream-write:pro', value='localstack_ext.providers:timestream_write', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='transfer:pro', value='localstack_ext.providers:transfer', group='localstack.aws.provider')
+2023-02-03T22:27:19.361 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='xray:pro', value='localstack_ext.providers:xray', group='localstack.aws.provider')
+2023-02-03T22:27:19.362 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='_run_init_scripts_on_ready', value='localstack.runtime.init:_run_init_scripts_on_ready', group='localstack.hooks.on_infra_ready')
+2023-02-03T22:27:19.362 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_virtual_host_routes', value='localstack.services.s3.virtual_host:register_virtual_host_routes', group='localstack.hooks.on_infra_ready')
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='extensions_on_infra_ready', value='localstack_ext.extensions.plugins:extensions_on_infra_ready', group='localstack.hooks.on_infra_ready')
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='initialize_health_info', value='localstack_ext.plugins:initialize_health_info', group='localstack.hooks.on_infra_ready')
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready._run_init_scripts_on_ready = <function _run_init_scripts_on_ready at 0x7fe3d1c9d3f0>)
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_ready:_run_init_scripts_on_ready
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready.register_virtual_host_routes = <function register_virtual_host_routes at 0x7fe3b55d0310>)
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_ready:register_virtual_host_routes is disabled
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready.extensions_on_infra_ready = <function extensions_on_infra_ready at 0x7fe3d1acea70>)
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_ready:extensions_on_infra_ready is disabled
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_ready.initialize_health_info = <function initialize_health_info at 0x7fe3d1acde10>)
+2023-02-03T22:27:19.565 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_ready:initialize_health_info is disabled
+2023-02-03T22:27:41.942 DEBUG --- [   asgi_gw_0] l.aws.handlers.service     : no service set in context, skipping request parsing
+2023-02-03T22:27:41.943  INFO --- [   asgi_gw_0] localstack.request.http    : GET / => 200
+2023-02-03T22:27:42.017 DEBUG --- [   asgi_gw_0] plugin.manager             : instantiating plugin PluginSpec(localstack.aws.provider.s3:default = <function s3 at 0x7fe3b55500d0>)
+2023-02-03T22:27:42.017 DEBUG --- [   asgi_gw_0] plugin.manager             : loading plugin localstack.aws.provider:s3:default
+2023-02-03T22:27:42.025  INFO --- [functhread12] l.services.motoserver      : starting moto server on http://0.0.0.0:35077
+2023-02-03T22:27:42.026  INFO --- [   asgi_gw_0] localstack.services.infra  : Starting mock S3 service on http port 4566 ...
+2023-02-03T22:27:42.256  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListObjects => 404 (404)
+2023-02-03T22:27:45.934  WARN --- [   asgi_gw_0] localstack.deprecations    : /health is deprecated (since 1.3.0) and will be removed in upcoming releases of LocalStack! Use /_localstack/health instead.
+2023-02-03T22:27:55.304 DEBUG --- [   asgi_gw_0] plugin.manager             : instantiating plugin PluginSpec(localstack.aws.provider.dynamodb:default = <function dynamodb at 0x7fe3b550ee60>)
+2023-02-03T22:27:55.304 DEBUG --- [   asgi_gw_0] plugin.manager             : loading plugin localstack.aws.provider:dynamodb:default
+2023-02-03T22:27:55.506 DEBUG --- [   asgi_gw_0] localstack.packages.api    : Installation of dynamodb-local skipped (already installed).
+2023-02-03T22:27:55.509 DEBUG --- [   asgi_gw_0] l.services.dynamodb.server : starting dynamodb process ['java', '-Xmx256m', '-javaagent:/usr/lib/localstack/dynamodb-local/latest/ddb-local-loader-0.1.jar', '-Djava.library.path=/usr/lib/localstack/dynamodb-local/latest/DynamoDBLocal_lib', '-jar', '/usr/lib/localstack/dynamodb-local/latest/DynamoDBLocal.jar', '-port', '43273', '-dbPath', '/var/lib/localstack/tmp/state/dynamodb']
+2023-02-03T22:27:55.510 DEBUG --- [functhread16] localstack.utils.run       : Executing command: ['java', '-Xmx256m', '-javaagent:/usr/lib/localstack/dynamodb-local/latest/ddb-local-loader-0.1.jar', '-Djava.library.path=/usr/lib/localstack/dynamodb-local/latest/DynamoDBLocal_lib', '-jar', '/usr/lib/localstack/dynamodb-local/latest/DynamoDBLocal.jar', '-port', '43273', '-dbPath', '/var/lib/localstack/tmp/state/dynamodb']
+2023-02-03T22:27:55.889  INFO --- [functhread16] l.services.dynamodb.server : Initializing DynamoDB Local with the following configuration:
+2023-02-03T22:27:55.889  INFO --- [functhread16] l.services.dynamodb.server : Port:	43273
+2023-02-03T22:27:55.889  INFO --- [functhread16] l.services.dynamodb.server : InMemory:	false
+2023-02-03T22:27:55.889  INFO --- [functhread16] l.services.dynamodb.server : DbPath:	/var/lib/localstack/tmp/state/dynamodb
+2023-02-03T22:27:55.889  INFO --- [functhread16] l.services.dynamodb.server : SharedDb:	false
+2023-02-03T22:27:55.889  INFO --- [functhread16] l.services.dynamodb.server : shouldDelayTransientStatuses:	false
+2023-02-03T22:27:55.889  INFO --- [functhread16] l.services.dynamodb.server : CorsParams:	null
+2023-02-03T22:27:55.902  INFO --- [functhread16] l.services.dynamodb.server : 
+2023-02-03T22:27:57.540 DEBUG --- [   asgi_gw_0] l.services.plugins         : checking service health dynamodb:4566
+2023-02-03T22:27:57.541  INFO --- [   asgi_gw_0] localstack.utils.bootstrap : Execution of "require" took 2236.68ms
+2023-02-03T22:27:57.673  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.ListTables => 200
+2023-02-03T22:28:12.820 DEBUG --- [   asgi_gw_1] plugin.manager             : instantiating plugin PluginSpec(localstack.aws.provider.lambda:default = <function awslambda at 0x7fe3b550f880>)
+2023-02-03T22:28:12.820 DEBUG --- [   asgi_gw_1] plugin.manager             : loading plugin localstack.aws.provider:lambda:default
+2023-02-03T22:28:12.942  INFO --- [   asgi_gw_1] localstack.services.infra  : Starting mock Lambda service on http port 4566 ...
+2023-02-03T22:28:13.547  INFO --- [   asgi_gw_1] localstack.utils.bootstrap : Execution of "require" took 727.47ms
+2023-02-03T22:28:13.987  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.PutItem => 400 (ResourceNotFoundException)
+2023-02-03T22:33:43.560  WARN --- [   asgi_gw_0] localstack.deprecations    : /health is deprecated (since 1.3.0) and will be removed in upcoming releases of LocalStack! Use /_localstack/health instead.
+2023-02-03T22:37:00.251  INFO --- [functhread16] l.services.dynamodb.server : 22:37:00.240 [qtp1459016715-27] WARN  com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : com.amazonaws.services.dynamodbv2.exceptions.DynamoDBLocalServiceException: Range Key not specified in Attribute Definitions.  Type unknown.
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:93) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:58) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.cp.CreateTableFunction.apply(CreateTableFunction.java:70) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.awssdkv1.client.LocalAmazonDynamoDB.createTable(LocalAmazonDynamoDB.java:229) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBRequestHandler.createTable(LocalDynamoDBRequestHandler.java:252) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.CreateTableDispatcher.enact(CreateTableDispatcher.java:18) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.CreateTableDispatcher.enact(CreateTableDispatcher.java:12) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:408) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:495) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:190) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:37:00.252  INFO --- [functhread16] l.services.dynamodb.server : at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-02-03T22:37:00.261  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.CreateTable => 400 (ValidationException)
+2023-02-03T22:39:20.518  INFO --- [functhread16] l.services.dynamodb.server : 22:39:20.517 [qtp1459016715-21] WARN  com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : com.amazonaws.services.dynamodbv2.exceptions.DynamoDBLocalServiceException: The number of attributes in key schema must match the number of attributes defined in attribute definitions.
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:93) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:58) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.cp.CreateTableFunction.apply(CreateTableFunction.java:125) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.awssdkv1.client.LocalAmazonDynamoDB.createTable(LocalAmazonDynamoDB.java:229) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBRequestHandler.createTable(LocalDynamoDBRequestHandler.java:252) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.CreateTableDispatcher.enact(CreateTableDispatcher.java:18) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.CreateTableDispatcher.enact(CreateTableDispatcher.java:12) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:408) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:495) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:190) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.519  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.520  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.521  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.521  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.521  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.521  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.521  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:39:20.522  INFO --- [functhread16] l.services.dynamodb.server : at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-02-03T22:39:20.523  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.CreateTable => 400 (ValidationException)
+2023-02-03T22:40:08.691  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.ListTables => 200
+2023-02-03T22:41:39.320  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.CreateTable => 200
+2023-02-03T22:41:43.931  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.ListTables => 200
+2023-02-03T22:41:44.739  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-03T22:41:44.830  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-03T22:42:02.139  INFO --- [functhread16] l.services.dynamodb.server : 22:42:02.138 [qtp1459016715-56] WARN  com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+2023-02-03T22:42:02.139  INFO --- [functhread16] l.services.dynamodb.server : com.amazonaws.services.dynamodbv2.exceptions.DynamoDBLocalServiceException: One of the required keys was not given a value
+2023-02-03T22:42:02.139  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:93) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.139  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:58) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.139  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:301) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:218) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:197) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.WriteDataPlaneFunction.validatePutItem(WriteDataPlaneFunction.java:78) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.validatePutItem(PutItemFunction.java:28) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.apply(PutItemFunction.java:62) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.awssdkv1.client.LocalAmazonDynamoDB.putItem(LocalAmazonDynamoDB.java:289) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBRequestHandler.putItem(LocalDynamoDBRequestHandler.java:359) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:18) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.140  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:12) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.141  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:408) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.141  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:495) ~[DynamoDBLocal.jar:?]
+2023-02-03T22:42:02.141  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.141  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.141  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.141  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:190) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.141  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.141  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.142  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.142  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.142  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.142  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.142  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.142  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.142  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.144  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.145  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.PutItem => 400 (ValidationException)
+2023-02-03T22:42:02.146  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.147  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.147  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.148  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.148  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.148  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.148  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.148  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.148  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-03T22:42:02.149  INFO --- [functhread16] l.services.dynamodb.server : at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-02-04T06:20:04.324  INFO --- [functhread16] l.services.dynamodb.server : 06:20:04.322 [qtp1459016715-33] WARN  com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+2023-02-04T06:20:04.324  INFO --- [functhread16] l.services.dynamodb.server : com.amazonaws.services.dynamodbv2.exceptions.DynamoDBLocalServiceException: One of the required keys was not given a value
+2023-02-04T06:20:04.325  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:93) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.327  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.PutItem => 400 (ValidationException)
+2023-02-04T06:20:04.327  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:58) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.328  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:301) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.328  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:218) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.329  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:197) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.329  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.WriteDataPlaneFunction.validatePutItem(WriteDataPlaneFunction.java:78) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.329  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.validatePutItem(PutItemFunction.java:28) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.329  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.apply(PutItemFunction.java:62) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.329  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.awssdkv1.client.LocalAmazonDynamoDB.putItem(LocalAmazonDynamoDB.java:289) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.330  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBRequestHandler.putItem(LocalDynamoDBRequestHandler.java:359) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.330  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:18) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.330  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:12) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.330  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:408) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.331  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:495) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:04.331  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.332  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.332  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.332  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:190) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.332  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.332  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.332  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.332  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.332  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.333  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.333  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.333  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.333  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.333  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.333  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:04.334  INFO --- [functhread16] l.services.dynamodb.server : at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-02-04T06:20:09.903  INFO --- [functhread16] l.services.dynamodb.server : 06:20:09.902 [qtp1459016715-52] WARN  com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : com.amazonaws.services.dynamodbv2.exceptions.DynamoDBLocalServiceException: One of the required keys was not given a value
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:93) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:58) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:301) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:218) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:197) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.WriteDataPlaneFunction.validatePutItem(WriteDataPlaneFunction.java:78) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.validatePutItem(PutItemFunction.java:28) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.apply(PutItemFunction.java:62) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.awssdkv1.client.LocalAmazonDynamoDB.putItem(LocalAmazonDynamoDB.java:289) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBRequestHandler.putItem(LocalDynamoDBRequestHandler.java:359) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:18) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:12) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:408) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.904  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:495) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:190) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.905  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.906  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.908  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.PutItem => 400 (ValidationException)
+2023-02-04T06:20:09.908  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.912  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.912  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.913  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.913  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.913  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.913  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.913  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.913  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:20:09.914  INFO --- [functhread16] l.services.dynamodb.server : at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-02-04T06:30:28.129  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:30:30.983  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:30:56.441  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:30:58.653  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:31:07.742  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:31:26.251  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:35:36.445  INFO --- [functhread16] l.services.dynamodb.server : 06:35:36.444 [qtp1459016715-52] WARN  com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+2023-02-04T06:35:36.445  INFO --- [functhread16] l.services.dynamodb.server : com.amazonaws.services.dynamodbv2.exceptions.DynamoDBLocalServiceException: One of the required keys was not given a value
+2023-02-04T06:35:36.445  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:93) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.445  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:58) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.445  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:301) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.445  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:218) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.445  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:197) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.445  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.WriteDataPlaneFunction.validatePutItem(WriteDataPlaneFunction.java:78) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.validatePutItem(PutItemFunction.java:28) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.apply(PutItemFunction.java:62) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.awssdkv1.client.LocalAmazonDynamoDB.putItem(LocalAmazonDynamoDB.java:289) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBRequestHandler.putItem(LocalDynamoDBRequestHandler.java:359) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:18) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:12) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:408) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:495) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:190) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.446  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.447  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.447  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.447  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.447  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.447  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.447  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.447  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.447  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.448  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.450  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.PutItem => 400 (ValidationException)
+2023-02-04T06:35:36.450  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.451  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.452  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.452  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.452  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.452  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.452  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.452  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.452  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:36.453  INFO --- [functhread16] l.services.dynamodb.server : at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-02-04T06:35:41.598  INFO --- [functhread16] l.services.dynamodb.server : 06:35:41.598 [qtp1459016715-53] WARN  com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+2023-02-04T06:35:41.599  INFO --- [functhread16] l.services.dynamodb.server : com.amazonaws.services.dynamodbv2.exceptions.DynamoDBLocalServiceException: One of the required keys was not given a value
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:93) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:58) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:301) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:218) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:197) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.WriteDataPlaneFunction.validatePutItem(WriteDataPlaneFunction.java:78) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.validatePutItem(PutItemFunction.java:28) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.apply(PutItemFunction.java:62) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.awssdkv1.client.LocalAmazonDynamoDB.putItem(LocalAmazonDynamoDB.java:289) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.600  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBRequestHandler.putItem(LocalDynamoDBRequestHandler.java:359) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.601  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.PutItem => 400 (ValidationException)
+2023-02-04T06:35:41.602  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:18) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.602  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:12) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.603  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:408) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.603  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:495) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:35:41.603  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.603  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.603  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.603  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:190) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.603  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.604  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.604  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.604  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.604  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.604  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.604  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.604  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.604  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.605  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.605  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.605  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.606  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.606  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.606  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.606  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.606  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.606  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.606  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:35:41.607  INFO --- [functhread16] l.services.dynamodb.server : at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-02-04T06:36:21.573  INFO --- [functhread16] l.services.dynamodb.server : 06:36:21.573 [qtp1459016715-56] WARN  com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler - DynamoDBLocalServiceException exception occured
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : com.amazonaws.services.dynamodbv2.exceptions.DynamoDBLocalServiceException: One of the required keys was not given a value
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildLocalServiceException(AWSExceptionFactory.java:93) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.exceptions.AWSExceptionFactory.buildAWSException(AWSExceptionFactory.java:58) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:301) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:218) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.DataPlaneFunction.validateKeyValue(DataPlaneFunction.java:197) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.WriteDataPlaneFunction.validatePutItem(WriteDataPlaneFunction.java:78) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.validatePutItem(PutItemFunction.java:28) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.api.dp.PutItemFunction.apply(PutItemFunction.java:62) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.shared.access.awssdkv1.client.LocalAmazonDynamoDB.putItem(LocalAmazonDynamoDB.java:289) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBRequestHandler.putItem(LocalDynamoDBRequestHandler.java:359) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:18) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.dispatchers.PutItemDispatcher.enact(PutItemDispatcher.java:12) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.packageDynamoDBResponse(LocalDynamoDBServerHandler.java:408) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.574  INFO --- [functhread16] l.services.dynamodb.server : at com.amazonaws.services.dynamodbv2.local.server.LocalDynamoDBServerHandler.handle(LocalDynamoDBServerHandler.java:495) ~[DynamoDBLocal.jar:?]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:190) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.575  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.576  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.576  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.577  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.579  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.PutItem => 400 (ValidationException)
+2023-02-04T06:36:21.579  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.581  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.582  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.582  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.582  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.583  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.583  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.583  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.583  INFO --- [functhread16] l.services.dynamodb.server : at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+2023-02-04T06:36:21.583  INFO --- [functhread16] l.services.dynamodb.server : at java.lang.Thread.run(Unknown Source) ~[?:?]
+2023-02-04T06:37:52.701  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.PutItem => 200
+2023-02-04T06:38:06.069  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:38:06.153  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-04T06:44:22.703  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T06:45:06.884  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.PutItem => 200
+2023-02-04T06:45:49.207  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.PutItem => 200
+2023-02-04T06:46:30.534  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:46:30.578  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-04T06:46:53.201  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:46:53.242  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-04T06:47:13.902  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:47:13.983  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-04T06:47:48.922  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T06:47:48.959  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-04T06:48:32.007  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.PutItem => 200
+2023-02-04T06:49:58.399  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T06:50:03.540  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T06:52:26.708  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:09:05.236  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:09:13.362  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:09:25.011  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:11:17.624  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:11:20.924  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:11:39.749  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:12:13.677  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:13:50.604  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:14:20.865  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:14:37.116  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:14:54.045  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:15:03.525  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:15:07.379  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:15:53.925  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:16:00.067  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:17:16.095  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:17:28.564  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:17:53.605  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:24:14.167  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DeleteItem => 200
+2023-02-04T07:24:27.877  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:24:27.915  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-04T07:24:33.513  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:24:45.616  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.DeleteItem => 200
+2023-02-04T07:24:53.763  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.DeleteItem => 200
+2023-02-04T07:24:57.275  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:24:57.314  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-04T07:24:59.189  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:24:59.228  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DescribeTable => 200
+2023-02-04T07:25:02.401  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:25:06.651  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DeleteItem => 200
+2023-02-04T07:25:30.861  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.DeleteItem => 200
+2023-02-04T07:25:33.830  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:25:41.653  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:26:23.872  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:27:14.836  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:27:20.681  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:27:21.703  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:27:24.367  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:29:16.910  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:29:27.060  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:29:28.116  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:29:31.610  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:29:55.309  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:30:01.998  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:31:37.406  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:31:50.747  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:31:55.400  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:32:49.973  WARN --- [   asgi_gw_0] localstack.deprecations    : /health is deprecated (since 1.3.0) and will be removed in upcoming releases of LocalStack! Use /_localstack/health instead.
+2023-02-04T07:34:08.697  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.GetItem => 200
+2023-02-04T07:34:38.182  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS dynamodb.Scan => 200
+2023-02-04T07:35:20.396  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS dynamodb.GetItem => 200
